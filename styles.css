@@ -1,0 +1,100 @@
+/* Reset & base */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-image: url(https://cdn.freecodecamp.org/curriculum/css-cafe/beans.jpg);
+  font-family: sans-serif;
+  padding: 40px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+}
+
+/* Header */
+.header {
+  background-color: #e7aa6d;
+  background-size: cover;
+  padding: 25px;
+  width: 100%;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+/*Add space between H1 and p*/
+#title{
+   margin-bottom: 20px;
+}
+
+#description {
+  margin-top: 0;
+}
+
+/* Form wrapper - this creates the card style */
+.form-wrapper {
+  background-color: white;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+  max-width: 500px;
+  width: 100%;
+}
+
+/* Each form group */
+.form-group {
+  margin-bottom: 20px;
+}
+
+/* Labels */
+label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: bold;
+}
+
+/* Inputs, select, textarea */
+input[type="text"],
+input[type="number"],
+input[type="email"],
+input[type="tel"],
+select,
+textarea {
+  width: 100%;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  display: block;
+  margin-top: 5px;
+}
+
+/* Checkbox & radio inputs spacing */
+input[type="radio"],
+input[type="checkbox"] {
+  margin-right: 8px;
+}
+
+/* Submit button */
+.submit-button {
+  background-color: #333;
+  color: white;
+  padding: 12px;
+  border: none;
+  width: 100%;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.submit-button:hover {
+  background-color: #000;
+}
+
+/* Optional: textarea styling */
+.text-area {
+  min-height: 100px;
+}
