@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Camper Cafe Feedback Form</title>
+    <link href="styles.css" rel="stylesheet" />
+  </head>
+  <body>
+    <div class="container">
+      <header class="header">
+        <h1 id="title">Camper Cafe Feedback Form</h1>
+        <p id="description">
+          Thank you for taking the time to help us improve our service
+        </p>
+      </header>
+
+      <div class="form-wrapper">
+        <form id="survey-form">
+          <!-- Name -->
+          <div class="form-group">
+            <label id="name-label" for="name">Name</label>
+            <input
+              id="name"
+              name="name"
+              type="text"
+              placeholder="Enter your name"
+              required
+            />
+          </div>
+
+          <!-- Email -->
+          <div class="form-group">
+            <label id="email-label" for="email">Email</label>
+            <input
+              id="email"
+              name="email"
+              type="email"
+              placeholder="Enter your email"
+              required
+            />
+          </div>
+
+          <!-- Age -->
+          <div class="form-group">
+            <label id="number-label" for="age">Age</label>
+            <input
+              id="number"
+              name="age"
+              min="1" 
+              max="100"
+              type="number"
+              placeholder="Enter your age"
+              required
+            />
+          </div>
+
+          <!-- Phone -->
+          <div class="form-group">
+	    <label id="phone-label" for="phone">Phone number</label>
+            <input
+              id="phone"
+              name="phone"
+              type="tel"
+              placeholder="e.g. 012-3456789"
+              required
+            />
+          </div>
+
+          <!-- Cleanliness -->
+          <div class="form-group">
+            <label for="dropdown">Cleanliness of the cafe</label>
+            <select id="dropdown" name="cleanliness" required>
+              <option disabled selected value>Select cleanliness</option>
+              <option value="clean">Clean</option>
+              <option value="moderate">Moderate</option>
+              <option value="dirty">Dirty</option>
+            </select>
+          </div>
+
+          <!-- Food quality -->
+          <div class="form-group">
+            <label>Food quality</label>
+            <label>
+              <input
+                type="radio" name="food" value="good"
+                checked
+              />
+              Good
+            </label>
+            <label>
+              <input type="radio" name="food" value="fair" />
+              Fair
+            </label>
+            <label>
+              <input type="radio" name="food" value="poor" />
+              Poor
+            </label>
+          </div>
+
+          <!-- Service quality -->
+          <div class="form-group">
+            <label>Service quality</label>
+            <label>
+              <input
+                type="checkbox"
+                name="quality"
+                value="good"
+                checked
+              />
+              Good
+            </label>
+            <label>
+              <input type="checkbox" name="quality" value="fair" />
+              Fair
+            </label>
+            <label>
+              <input type="checkbox" name="quality" value="poor" />
+              Poor
+            </label>
+          </div>
+
+          <!-- Suggestions -->
+          <div class="form-group">
+            <label for="comments"
+              >Any suggestions to improve our quality?</label
+            >
+            <textarea
+              id="comments"
+              name="comments"
+              class="text-area"
+              placeholder="Enter your comments here"
+            ></textarea>
+          </div>
+
+          <!-- Submit -->
+          <div class="form-group">
+            <button id="submit" type="submit" class="submit-button">
+              Submit
+            </button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>
